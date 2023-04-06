@@ -1,0 +1,35 @@
+<body>
+    <mat-card>
+        <b><span>Dashboard</span></b>
+    </mat-card>
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Total Seller:</h2>
+                    <h1 class="title">{{data?.seller}}</h1>
+                    <p><button class="button" [routerLink]="['/loan/seller']">View Seller</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Total Product:</h2>
+                    <h1 class="title">{{data?.product}}</h1>
+                    <p><button class="button" [routerLink]="['/loan/product']">View Product</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Total Loan:</h2>
+                    <h1 class="title">{{data?.loan}}</h1>
+                    <p><button class="button" [routerLink]="['/loan/loan']">View Seller</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
